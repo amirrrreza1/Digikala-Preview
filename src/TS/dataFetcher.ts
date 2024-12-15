@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3004";
+const baseUrl = "https://digi-api.vercel.app";
 
 const dataFetcher = async (apiRoute: string) => {
   try {

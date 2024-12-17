@@ -11,59 +11,132 @@
 
 <body>
   <!--Project Start-->
-  <div
-    class="header__Banner w-full h-[60px] bg-[#CC1335] flex justify-center items-center sticky top-0 left-0 bannerZindex">
-    <div class="header__Banner__CountDown w-[130px] h-[40px] flex justify-between items-center z-30">
-      <div class="header__Banner__CountDown__second counter-box"></div>
-      <span class="text-white font-bold text-[20px]">:</span>
-      <div class="header__Banner__CountDown__minute counter-box"></div>
-      <span class="text-white font-bold text-[20px]">:</span>
-      <div class="header__Banner__CountDown__hour counter-box"></div>
-    </div><!--timer-->
-  </div>
-  <!--header mobile Start-->
-  <div class="">
-    <input class="sticky top-[60px] left-0 w-[95%] h-[50px] bg-[#F0F0F1] rounded-[30px]" type="search" name="search"
-      id="headerSearch">
 
+  <!--header mobile Start-->
+  <div class="lg:hidden sticky top-0 left-0 bannerZindex">
+    <div class="header__Banner w-full h-[30px] bg-[#CC1335] flex justify-center items-center bannerZindex">
+      <div class="header__Banner__CountDown w-[130px] h-[40px] flex justify-between items-center z-30">
+        <div class="header__Banner__CountDown__second counter-box"></div>
+        <span class="text-white font-bold text-[20px]">:</span>
+        <div class="header__Banner__CountDown__minute counter-box"></div>
+        <span class="text-white font-bold text-[20px]">:</span>
+        <div class="header__Banner__CountDown__hour counter-box"></div>
+      </div><!--timer-->
+    </div>
+    <div class="w-[95%] h-[60px] m-auto py-[10px] bg-white">
+      <input class="w-full h-[40px] bg-[#F0F0F1] rounded-[30px] px-[20px]" type="search" name="search"
+        id="headerSearch">
+    </div>
   </div>
-  <div class="lg:hidden w-full h-[50px] fixed bottom-0 left-0 shadow-md shadow-black flex justify-around items-center bg-white">
+  <div
+    class="bannerZindex lg:hidden w-full h-[50px] fixed bottom-0 shadow-md shadow-black flex justify-around items-center bg-white">
     <a class="flex flex-col items-center" href="">
       <img src="./public/Images/SVG/homePage.svg" alt="home">
       <div class="text-[12px]">خانه</div>
     </a>
-    <a class="flex flex-col items-center" href=""><img src="./public/Images/SVG/categorize.svg" alt="home">
+    <a class="flex flex-col items-center" href="#">
+      <img src="./public/Images/SVG/categorize.svg" alt="home">
       <div class="text-[12px]">دسته بندی</div>
     </a>
-    <a class="flex flex-col items-center" href=""><img src="./public/Images/SVG/shopCard.svg" alt="home">
+    <a class="flex flex-col items-center" href="#">
+      <img src="./public/Images/SVG/shopCard.svg" alt="home">
       <div class="text-[12px]">سبد خرید</div>
     </a>
-    <a class="flex flex-col items-center" href=""><img src="./public/Images/SVG/profile.svg" alt="home">
+    <a class="flex flex-col items-center" href="#">
+      <img src="./public/Images/SVG/profile.svg" alt="home">
       <div class="text-[12px]">دیجیکالا من</div>
     </a>
   </div>
   <!--header mobile End-->
 
-  <!--Icon start-->
-  <div class="iconItems w-[95%] lg:w-[80%] h-fit m-auto flex flex-wrap justify-between items-center"></div>
-  <!--Icon End-->
+  <!--header Desktop Start-->
+  <div class="hidden lg:block sticky top-0 left-0 bannerZindex bg-white shadow-gray-400 shadow-sm">
+    <div class="">
+      <img src="./public/Images/header/banner.png" alt="banner">
+    </div>
+    <div class="w-full px-[20px]  lg:flex justify-between ">
+      <div class="p-[10px] flex gap-[10px]">
+        <img width="195px" height="30px" src="./public/Images/SVG/digikalaIcon.svg" alt="">
+        <input class="w-[540px] h-[40px] bg-[#F0F0F1] rounded-lg" type="text" name="desktopSearch" id="desktopSearch">
+      </div>
+      <div class="flex gap-4 items-center">
+        <div class="w-fit p-[7px] rounded-lg border-solid border-[0.7px] border-black/40 flex gap-1">
+          <img src="./public/Images/SVG/loginIcon.svg" alt="">
+          <div class="">ورود | ثبت نام</div>
+        </div>
+        <span class="w-[0.5px] h-[25px] bg-black/40 block"></span>
+        <div class=""><img src="./public/Images/SVG/cardShop.svg" alt=""></div>
+      </div>
+    </div>
+    <div class="w-full h-[35px] px-[30px] flex justify-between items-center  bg-white">
+      <div class="flex gap-3 items-center ">
+        <a class="animatedLink flex gap-2 justify-center items-end ml-3" href="">
+          <img width="24px" height="24px" src="./public/Images/SVG/hamburgerMenu.svg" alt="">
+          <div class="">دسته بندی ها</div>
+        </a>
+        <span class="block bg-black/20 w-[1px] h-[15px]"></span>
+        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
+          <img width="17px" height="17px" src="./public/Images/SVG/AmazingPage.svg" alt="amazingPage">
+          <div class="text-[13px] text-[#A1A3A8]">شگفت انگیزها
+          </div>
+        </a>
+        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
+          <img width="17px" height="17px" src="./public/Images/SVG/superMarket.svg" alt="amazingPage">
+          <div class="text-[13px] text-[#A1A3A8]">سوپرمارکت
+          </div>
+        </a>
+        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
+          <img width="17px" height="17px" src="./public/Images/SVG/giftCard.svg" alt="amazingPage">
+          <div class="text-[13px] text-[#A1A3A8]">کارت هدیه
+          </div>
+        </a>
+        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
+          <img width="17px" height="17px" src="./public/Images/SVG/mostSell.svg" alt="amazingPage">
+          <div class="text-[13px] text-[#A1A3A8]">پرفروش ترین
+          </div>
+        </a>
+        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
+          <img width="17px" height="17px" src="./public/Images/SVG/offers.svg" alt="amazingPage">
+          <div class="text-[13px] text-[#A1A3A8]">تخفیف ها و پسشنهادات
+          </div>
+        </a>
+        <span class="block bg-black/20 w-[1px] h-[15px]"></span>
+        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
+          <div class="text-[13px] text-[#A1A3A8]">سوالی دارید؟
+          </div>
+        </a>
+        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
+          <div class="text-[13px] text-[#A1A3A8]">در دیجیکالا بفروشید!
+          </div>
+        </a>
+      </div>
+      <a href="#" class="flex items-center gap-1">
+        <img src="./public/Images/SVG/location.svg" alt="location">
+        <div class="text-[13px] text-black/40">ارسال به تهران, تهران</div>
+      </a>
+    </div>
+
+  </div>
+  <!--header Desktop End-->
 
   <!--Story Start-->
   <div class="w-[95%] lg:w-[80%] h-[130px] m-auto">
     <div class="relative">
       <swiper-container class="storySlider" slides-per-view="4" space-between="10" breakpoints='{
-        "400": {"slidesPerView": 5},
-        "640": {"slidesPerView": 6.2},
-        "768": {"slidesPerView": 7.5},
-        "900": {"slidesPerView": 9},
-        "1250": {"slidesPerView": 12.5}
-    }'>
+          "400": {"slidesPerView": 5},
+          "640": {"slidesPerView": 6.2},
+          "768": {"slidesPerView": 7.5},
+          "900": {"slidesPerView": 9},
+          "1250": {"slidesPerView": 12.5}
+      }'>
       </swiper-container>
 
       <div class="custom-next"><img width="20px" height="20px" src="./public/Images/MainIcons/right-arrow.svg"
-          alt="Next"></div>
+          alt="Next">
+      </div>
       <div class="custom-prev"><img width="20px" height="20px" src="./public/Images/MainIcons/left-arrow.svg"
-          alt="Prev"></div>
+          alt="Prev">
+      </div>
     </div>
   </div>
   <!--Story End-->
@@ -79,6 +152,10 @@
     </div>
   </div>
   <!--Main Slider End-->
+
+  <!--Icon start-->
+  <div class="iconItems w-[95%] lg:w-[80%] h-fit m-auto flex flex-wrap justify-between items-center"></div>
+  <!--Icon End-->
 
   <!--Amazing Slider Start-->
   <div
@@ -99,30 +176,38 @@
   </div>
   <!--Amazing Slider End-->
 
-
-
   <!--partnerShip Start-->
   <div
     class="partnerShip w-[95%] lg:w-[90%] 2xl:w-[80%] h-fit mx-auto my-[20px] flex  flex-wrap gap-y-3 justify-around lg:justify-between">
   </div>
   <!--partnerShip End-->
 
+  <!--Super market Start-->
+  <div
+    class="w-[95%] lg:w-[90%] 2xl:w-[80%] h-fit mx-auto my-[20px] lg:flex justify-between bg-[#ECEFEF] bg-seperMarketPattern p-[30px] rounded-[20px]">
+    <div class="flex justify-center items-center gap-[10px] my-[30xp] lg:m-0">
+      <img width="66px" height="62px" src="./public/Images/superMarket/superMatketBasket.png" alt="">
+      <img width="250px" height="30px" src="./public/Images/SVG/superMarketText.svg" alt="">
+      <div
+        class="w-[110px] h-[30px] text-[14px] justify-center items-center hidden lg:flex px-2 py-1 bg-[#3E9A4C] rounded-[20px] text-white">
+        تا 60% تخفیف</div>
+    </div>
+    <div class="lg:flex justify-center items-center gap-4">
+      <div class="superMarket flex justify-center items-center gap-3"></div>
+      <div
+        class="flex justify-center items-center h-[40px] p-[5px] my-[20px] gap-2 bg-white rounded-full text-[#3E9A4C]">
+        بیش از 200 کالا
+        <img class="w-[20px] h-[20px]" src="./public/Images/SVG/greenArrow.svg" alt="greenArrow">
+      </div>
+    </div>
+  </div>
+  <!--Super market End-->
+
   <!--partnerShip 2 Start-->
   <div
     class="partnerShip2 w-[95%] lg:w-[90%] 2xl:w-[80%] h-fit mx-auto my-[20px] flex  flex-wrap gap-y-3 justify-center lg:justify-between items-center">
   </div>
   <!--partnerShip 2 End-->
-
-  <!--partnerShip 3 Start-->
-  <div
-    class="partnerShip3 w-[95%] lg:w-[90%] 2xl:w-[80%] h-fit mx-auto my-[20px] flex  flex-wrap gap-y-3 justify-center lg:justify-between items-center">
-  </div>
-  <!--partnerShip 3 End-->
-
-  <!--partnerShip 4 Start-->
-  <div class="partnerShip4 w-[95%] lg:w-[90%] 2xl:w-[80%] h-fit mx-auto my-[20px] rounded-[20px] overflow-hidden">
-  </div>
-  <!--partnerShip 4 End-->
 
   <!--categorize Shopping Start-->
   <div
@@ -132,17 +217,12 @@
   </div>
   <!--categorize Shopping End-->
 
-  <!--Client taste Start-->
-  <div
-    class="clientTasteItems w-full lg:w-[90%] 2xl:w-[80%] m-auto my-[30px] border-black/20 border-solid border-[1px] rounded-[15px] flex justify-between flex-wrap">
-  </div>
-  <!--Client taste End-->
 
-  <!--Client taste 2 Start-->
+  <!--partnerShip 3 Start-->
   <div
-    class="clientTasteItems2 w-full lg:w-[90%] 2xl:w-[80%] m-auto my-[30px] border-black/20 border-solid border-[1px] rounded-[15px] flex justify-between flex-wrap">
+    class="partnerShip3 w-[95%] lg:w-[90%] 2xl:w-[80%] h-fit mx-auto my-[20px] flex  flex-wrap gap-y-3 justify-center lg:justify-between items-center">
   </div>
-  <!--Client taste 2 End-->
+  <!--partnerShip 3 End-->
 
   <!--Most popular Brands Start-->
   <div class="w-full lg:w-[90%] 2xl:w-[80%] m-auto border-black/20 border-solid border-[1px] rounded-[15px] my-4">
@@ -168,9 +248,22 @@
   </div>
   <!--Most popular Brands End-->
 
+  <!--partnerShip 4 Start-->
+  <div class="partnerShip4 w-[95%] lg:w-[90%] 2xl:w-[80%] h-fit mx-auto my-[20px] rounded-[20px] overflow-hidden">
+  </div>
+  <!--partnerShip 4 End-->
+
+  <!--Client taste Start-->
+  <div
+    class="clientTasteItems w-full lg:w-[90%] 2xl:w-[80%] m-auto my-[30px] border-black/20 border-solid border-[1px] rounded-[15px] flex justify-between flex-wrap">
+  </div>
+  <!--Client taste End-->
+
   <!--Most Selled Product start-->
-  <div class="w-full lg:w-[90%] 2xl:w-[80%] m-auto border-black/20 border-solid border-[1px] rounded-[15px] my-4">
-    <div class="">
+  <div
+    class="w-full lg:w-[90%] 2xl:w-[80%] m-auto border-black/20 border-solid border-[1px] rounded-[15px] my-4 flex flex-col gap-y4">
+    <div class="h-[50px] flex justify-center items-end gap-2 font-bold text-[16px]">
+      <img src="./public/Images/SVG/mostSellProducts.svg" alt="">
       پرفروش ترین کالا ها
 
     </div>
@@ -193,26 +286,11 @@
   </div>
   <!--Most Selled Product End-->
 
-  <!--Super market Start-->
+  <!--Client taste 2 Start-->
   <div
-    class="w-[95%] lg:w-[90%] 2xl:w-[80%] h-fit mx-auto my-[20px] lg:flex justify-between bg-[#ECEFEF] bg-seperMarketPattern p-[30px] rounded-[20px]">
-    <div class="flex justify-center items-center gap-[10px] my-[30xp] lg:m-0">
-      <img width="66px" height="62px" src="./public/Images/superMarket/superMatketBasket.png" alt="">
-      <img width="250px" height="30px" src="./public/Images/SVG/superMarketText.svg" alt="">
-      <div
-        class="w-[110px] h-[30px] text-[14px] justify-center items-center hidden lg:flex px-2 py-1 bg-[#3E9A4C] rounded-[20px] text-white">
-        تا 60% تخفیف</div>
-    </div>
-    <div class="lg:flex justify-center items-center gap-4">
-      <div class="superMarket flex justify-center items-center gap-3"></div>
-      <div
-        class="flex justify-center items-center h-[40px] p-[5px] my-[20px] gap-2 bg-white rounded-full text-[#3E9A4C]">
-        بیش از 200 کالا
-        <img class="w-[20px] h-[20px]" src="./public/Images/SVG/greenArrow.svg" alt="greenArrow">
-      </div>
-    </div>
+    class="clientTasteItems2 w-full lg:w-[90%] 2xl:w-[80%] m-auto my-[30px] border-black/20 border-solid border-[1px] rounded-[15px] flex justify-between flex-wrap">
   </div>
-  <!--Super market End-->
+  <!--Client taste 2 End-->
 
   <!--Selected offer Products  -->
   <div
@@ -232,7 +310,7 @@
       <div class="text-[18px] font-bold">خواندنی ها</div>
       <a href="#" class="text-blue text-[12px] flex justify-center items-center">
         مطالب بیشتر در دیجیکالا مگ
-        <img src="./public/Images/ReadingBlog/Blueflash.svg" alt=""></a>
+        <img src="./public/Images/SVG/blueLeft-falsh.svg" alt=""></a>
     </div>
     <div class="readingBlogItem w-[95%] lg:w-full m-auto lg:flex justify-between items-center"></div>
   </div>
@@ -644,8 +722,8 @@
       </div>
     </div>
     <hr class="w-[95%] m-auto h-[0.5px]">
-    <div class="w-full p-[20px] text-[14px] text-[#62666D]">
-      <div class="flex font-bold text-[18px] text-[#62666D] pb-3">فروشگاه اینترنتی دیجیکالا , بررسی , انتخاب و خرید
+    <div class="w-full p-[20px] text-[14px] text-[#62666D] mb-[50px]">
+      <div class="flex font-bold text-[18px] text-[#62666D] pb-3 ">فروشگاه اینترنتی دیجیکالا , بررسی , انتخاب و خرید
         آنلاین</div>
       <p class="readMoreText text-black/50">یک خرید مطمئن اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی
         متنوع، باکیفیت و دارای قیمت مناسب را
@@ -761,7 +839,7 @@
 
   <!--Project End-->
   <script src="./swiper/swiper-element-bundle.min.js"></script>
-  <script type="module" src="./src/TS/main.js"></script>
+  <script type="module" src="./src/TS/main.ts"></script>
   <script>
     const swiper = document.querySelector('.storySlider');
 

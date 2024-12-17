@@ -12,6 +12,7 @@ const withDigikala = async (): Promise<void> => {
     });
 
     document.querySelector(".withDigikala")!.innerHTML = items.join("");
+    document.querySelector(".withDigikalaMobile")!.innerHTML = items.join("");
   } catch (error) {
     console.log((error as Error).message);
   }

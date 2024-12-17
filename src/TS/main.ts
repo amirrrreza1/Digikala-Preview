@@ -20,6 +20,8 @@ import withDigikala from "./footer/withDigikala";
 import customer from "./footer/customer";
 import guide from "./footer/guide";
 import amazingSlider from "./amazingSlider/amazingSlider";
+import readMore from "./footer/readMore";
+import accardion from "./footer/accardion";
 
 iconItems();
 storySlider();
@@ -45,3 +47,5 @@ withDigikala();
 customer();
 guide();
 amazingSlider();
+readMore();
+accardion();

@@ -153,10 +153,17 @@ swiper-container .swiper-button-next {
   top: calc(50% - 40px / 2);
 }
 
-.xxx::marker {
-  display: none;
+.bannerZindex{
+  z-index: 1000 !important;
 }
 
-.xxxx{
-  z-index: 100 !important;
+.readMoreText.showMore .moreText{
+  display: inline;
+}
+
+.accardionSVG.accardionTransiotion{
+  transform: rotateX(180deg);
+}
+.accardionShowMoreToggle{
+  display: flex;
 }

@@ -12,6 +12,7 @@ const customer = async (): Promise<void> => {
     });
 
     document.querySelector(".customer")!.innerHTML = items.join("");
+    document.querySelector(".customerMobile")!.innerHTML = items.join("");
   } catch (error) {
     console.log((error as Error).message);
   }

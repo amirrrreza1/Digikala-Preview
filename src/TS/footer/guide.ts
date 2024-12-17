@@ -12,6 +12,7 @@ const guide = async (): Promise<void> => {
     });
 
     document.querySelector(".guide")!.innerHTML = items.join("");
+    document.querySelector(".guidemobile")!.innerHTML = items.join("");
   } catch (error) {
     console.log((error as Error).message);
   }
